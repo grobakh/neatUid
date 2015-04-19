@@ -27,6 +27,10 @@ Sequnce integers are DB generated. It is possible to create ids of entities only
 They are sequental, so they are predictable. Users can see this progression in URLs and use it.
 For example: mysite.com/user/1, mysite.com/user/2, mysite.com/user/888 - so we have 888 users and can iterate them.
 
+`neatUid('35xqmqtt2x') ~= UUID('a8098c1a-f86e-11da')`
+
+neatUid is much more like first 7 byte of UUID object. It use time-stamp and random numbers. Also it use 36 symbols to encode integer [0-9a-z].
+
 ##### Time-stamp non-destructive encoding
 neatUid shifts random seed to 10^13 and apply that seed to the timestamp.
 So it is possible to get back creation time by next expression:
