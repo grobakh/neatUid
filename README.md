@@ -1,5 +1,5 @@
 # neatUid
-### Clean and simple time-based Unique Id generator
+### Clean and simple time-based unique Id generator
 neatUid uses Date.getTime() to eliminate single machine creation conflict.
 
 It applies small random seed to timestamp
