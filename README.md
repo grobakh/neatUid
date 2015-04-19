@@ -3,8 +3,8 @@
 neatUid uses Date.getTime() to eliminate single machine creation conflict.
 
 It applies small random seed to timestamp
-1. Better conflict-proof generation
-2. Сamouflage sequental nature of increasing ms in time.
+- Better conflict-proof generation
+- Сamouflage sequental nature of increasing ms in time.
 
 ##### Output samples:
 ```
