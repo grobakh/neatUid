@@ -17,10 +17,12 @@ gvnzto7lpy
 
 ##### Comparisson with uuid and sequencers.
 `UUID('a8098c1a-f86e-11da-bd1a-00112444be1e')`
+
 UUID objects according to RFC 4122 contains time-stamp, possible MAC, and huge amount of random.
 It is possible to create objects with uuid on UI and store them without any conflict on DB in several threads and DB instances.
 
 `Sequnce('1','2','3'...)`
+
 Sequnce integers are DB generated. It is possible to create ids of entities only with DB and only on single instance.
 They are sequental, so they are predictable. Users can see this progression in URLs and use it.
 For example: mysite.com/user/1, mysite.com/user/2, mysite.com/user/888 - so we have 888 users and can iterate them.
